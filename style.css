@@ -1,0 +1,124 @@
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Hammersmith One', sans-serif;
+}
+header{
+  background: url(img/bck_topo.jpg) fixed;
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid red; */
+  /* object-fit: cover; */
+}
+header nav{
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+
+}
+header nav ul{
+  list-style: none;
+  display: flex;
+  
+}
+header nav ul li{
+  padding: 10px;
+  margin: 15px;
+  font-size: 22px;
+  color: rgba(0, 0, 0, 0.5);
+}
+header nav ul li a{
+  text-decoration: none;
+}
+header nav ul li:hover{
+  color: rgba(0, 0, 0, 1);
+}
+.titulo{
+  width: 100%;
+  /* border: 1px solid red; */
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+  .titulo h1{
+    margin: 0 auto;
+    font-size: 55px;
+    color: rgba(0, 0, 0, 0.8);
+    background-color:rgba(255, 255,255, 0.5);
+    margin-bottom: 100px;
+  }
+
+  .segunda-s{
+    width: 100%;
+    height: 600px;
+    background: url(img/foto01.jpg) fixed;
+    background-size: cover;
+  }
+  .terceira-s{
+    width: 100%;
+    height: 600px;
+    background: url(img/fotoo2.jpg) fixed;
+    background-size: cover;
+  }
+  .redes-sociais{
+    display: flex;
+    position: absolute;
+    top: 220px;
+
+  }
+  .redes-sociais ul li{
+    display: flex;
+    align-items: center;
+   
+    
+  }
+  .redes-sociais ul{
+    display: inline-block;
+    /* border: 1px solid red;  */
+  }
+  .redes-sociais ul li span:nth-child(1){
+    width: 40px;
+    height: 40px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 50%; */
+    overflow: hidden;
+    /* object-fit: cover; */
+    z-index: 2;
+
+  }
+  .redes-sociais ul li img{
+    width: 120%;
+    height: auto;
+  }
+
+  .redes-sociais ul li span:nth-child(2){
+    background-color: #202020;
+    color: white;
+    height: 40px;
+    width: 1px;
+    display: flex;
+    align-items: center;
+    transition:  0.5s;
+  }
+  .redes-sociais ul li:hover span:nth-child(2){
+     width: 90px;
+
+  }
+  .redes-sociais ul li span p{
+    font-weight: 600;
+    padding: 5px;
+    transform: translateX(-120px);
+    transition: 0.5s;
+  }
+  .redes-sociais ul li:hover span p{
+    transition-delay:0.1s;
+    transform: translateX(0px);
+  }
